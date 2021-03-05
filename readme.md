@@ -1,8 +1,8 @@
-#gcloud builds submit --tag gcr.io/fir-91406/grpc
+#gcloud builds submit --tag gcr.io/<project>/grpc
 
 docker build .
-docker tag ad06537ac50e gcr.io/fir-91406/grpc
-docker push gcr.io/fir-91406/grpc
+docker tag ad06537ac50e gcr.io/<project>/grpc
+docker push gcr.io/<project>/grpc
 
 Enable http/2 on deployment of cloud run (connections)!
 
